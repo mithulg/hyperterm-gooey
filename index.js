@@ -1,28 +1,29 @@
 
 const backgroundColor = '#282c34'
 const foregroundColor = '#abb2bf'
-const cursorColor = foregroundColor
 const borderColor = backgroundColor
 
 const colors = {
   black       : backgroundColor,
-  red         : '#e06c75', // red
-  green       : '#98c379', // green
-  yellow      : '#d19a66', // yellow
-  blue        : '#56b6c2', // blue
-  magenta     : '#c678dd', // pink
-  cyan        : '#56b6c2', // cyan
-  white       : '#d0d0d0', // light gray
-  lightBlack  : '#808080', // medium gray
-  lightRed    : '#e06c75', // red
-  lightGreen  : '#98c379', // green
-  lightYellow : '#d19a66', // yellow
-  lightBlue   : '#56b6c2', // blue
-  lightMagenta: '#c678dd', // pink
-  lightCyan   : '#56b6c2', // cyan
+  red         : '#ff757f', // red
+  green       : '#7ee2c6', // green
+  yellow      : '#9890fa', // yellow
+  blue        : '#3ba2ca', // blue
+  magenta     : '#de6e9d', // pink
+  cyan        : '#96edf0', // cyan
+  white       : '#c0c5d1', // light gray
+  lightBlack  : '#42464e', // medium gray
+  lightRed    : '#ed525c', // red
+  lightGreen  : '#37fab4', // green
+  lightYellow : '#f2ef9c', // yellow
+  lightBlue   : '#82e5fd', // blue
+  lightMagenta: '#ef4c89', // pink
+  lightCyan   : '#68e1e5', // cyan
   colorCubes  : '#ffffff', // white
   grayscale   : foregroundColor
 }
+
+const cursorColor = colors.green
 
 exports.decorateConfig = config => {
   return Object.assign({}, config, {
@@ -64,19 +65,20 @@ exports.decorateConfig = config => {
         transition: none;
       }
       .tab_tab::after {
-        content: "";
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        bottom: -1px;
-        left: 0;
-        width: 2px;
-        height: inherit;
-        background: #528bff;
-        opacity: 0;
-        transition: opacity .16s;
-        z-index: 1;
-      }
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: ${ colors.green  };
+    opacity: 0;
+    transition: opacity .16s;
+    z-index: 1;  
+
+    }
       .tabs_title,
       .tab_tab.tab_active {
         font-weight: 500;
