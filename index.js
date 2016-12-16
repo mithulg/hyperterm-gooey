@@ -65,21 +65,20 @@ exports.decorateConfig = config => {
         transition: none;
       }
       .tab_tab::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: ${ colors.green  };
-    opacity: 0;
-    transition: opacity .16s;
-    z-index: 1; 
-    box-shadow: 0 0 10px ${ colors.green }; 
-
-    }
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: ${ colors.green  };
+        opacity: 0;
+        transition: opacity .16s;
+        z-index: 1;
+        box-shadow: 0 0 10px ${ colors.green };
+        }
       .tabs_title,
       .tab_tab.tab_active {
         font-weight: 500;
