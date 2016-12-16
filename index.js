@@ -5,16 +5,16 @@ const borderColor = backgroundColor
 
 const colors = {
   black       : backgroundColor,
-  red         : '#eb6383', // red
-  green       : '#37fab4', // green
+  red         : '#eb6e81', // red
+  green       : '#83f7d6', // green
   yellow      : '#a2a1f8', // yellow
   blue        : '#508ae1', // blue
   magenta     : '#de53cf', // pink
   cyan        : '#33d6e0', // cyan
   white       : '#9faac1', // light gray
   lightBlack  : '#788194', // medium gray
-  lightRed    : '#f6888f', // red
-  lightGreen  : '#83f7d6', // green
+  lightRed    : '#f59ea3', // red
+  lightGreen  : '#37fab4', // green
   lightYellow : '#f2ef9c', // yellow
   lightBlue   : '#83a8ed', // blue
   lightMagenta: '#f288d9', // pink
