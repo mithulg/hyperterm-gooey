@@ -76,7 +76,8 @@ exports.decorateConfig = config => {
     background: ${ colors.green  };
     opacity: 0;
     transition: opacity .16s;
-    z-index: 1;  
+    z-index: 1; 
+    box-shadow: 0 0 10px ${ colors.green }; 
 
     }
       .tabs_title,
