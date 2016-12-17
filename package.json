@@ -1,12 +1,17 @@
 {
   "name": "hyperterm-gooey",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Gooey Hyperterm Theme, based on Atom Gooey",
   "main": "index.js",
   "repository": "https://github.com/simeydotme/hyperterm-gooey.git",
   "keywords": [
     "hyperterm",
+    "hyper",
+    "hyper.is",
+    "hyper.js",
     "hyperterm-theme",
+    "theme",
+    "terminal",
     "colors",
     "atom",
     "gooey",
@@ -15,6 +20,6 @@
     "green",
     "dark"
   ],
-  "author": "Simon Goellner",
+  "author": "Simon Goellner <simey.me@gmail.com> (http://simey.me)",
   "license": "MIT"
 }

@@ -1,4 +1,3 @@
-
 const backgroundColor = '#282c34'
 const foregroundColor = '#abb2bf'
 const borderColor = backgroundColor
@@ -115,45 +114,38 @@ exports.decorateConfig = config => {
       }
       .tab_icon {
         display: block;
-        background: rgba(157, 165, 180, 0.6);
-        -webkit-mask-image: url('${__dirname}/close.svg');
-        mask-image: url('${__dirname}/close.svg');
-        -webkit-mask-size: 7px;
-        mask-size: 7px;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-position-y: center;
-        mask-position-y: center;
-        -webkit-mask-position-x: 8px;
-        mask-position-x: 8px;
-        width: 26px;
+        width: 32px;
         height: 100%;
         top: 0;
         right: 0;
-        transform: scale(0);
-        transition: transform .08s;
-        opacity: 1;
+        transform: scale(0.35);
+        transition: transform 0.4s ease, opacity 0.3s ease;
+        opacity: 0;
         border-radius: 0;
         z-index: 2;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4cHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgOCA4Ij4KICA8cGF0aCBkPSJNNS40MTQyMTM2NSw0LjAwMDAwMDA5IEw4LjAwNzEwNjk3LDYuNTkyODkzNDEgTDYuNTkyODkzNDEsOC4wMDcxMDY5NyBMNC4wMDAwMDAwOSw1LjQxNDIxMzY1IEwxLjQwNzEwNjc3LDguMDA3MTA2OTcgTC0wLjAwNzEwNjc5MzExLDYuNTkyODkzNDEgTDIuNTg1Nzg2NTMsNC4wMDAwMDAwOSBMLTAuMDA3MTA2NzkzMTEsMS40MDcxMDY3NyBMMS40MDcxMDY3NywtMC4wMDcxMDY3OTMxMSBMNC4wMDAwMDAwOSwyLjU4NTc4NjUzIEw2LjU5Mjg5MzQxLC0wLjAwNzEwNjc5MzExIEw4LjAwNzEwNjk3LDEuNDA3MTA2NzcgTDUuNDE0MjEzNjUsNC4wMDAwMDAwOSBaIiBmaWxsPSJyZ2IoMTU3LCAxNjUsIDE4MCkiPjwvcGF0aD4KPC9zdmc+Cg==');
+        background-repeat: no-repeat;
+        background-position: center;
       }
       .tab_icon:hover {
-        background: rgba(157, 165, 180, 0.6);
-        opacity: .7;
-      }
-      .tab_tab.tab_active .tab_icon {
-        background: #d7dae0;
+        opacity: 0.6;
+        background-color: transparent;
       }
       .tab_tab.tab_active .tab_icon:hover {
-        background: #d7dae0;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4cHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgOCA4Ij4KICA8cGF0aCBkPSJNNS40MTQyMTM2NSw0LjAwMDAwMDA5IEw4LjAwNzEwNjk3LDYuNTkyODkzNDEgTDYuNTkyODkzNDEsOC4wMDcxMDY5NyBMNC4wMDAwMDAwOSw1LjQxNDIxMzY1IEwxLjQwNzEwNjc3LDguMDA3MTA2OTcgTC0wLjAwNzEwNjc5MzExLDYuNTkyODkzNDEgTDIuNTg1Nzg2NTMsNC4wMDAwMDAwOSBMLTAuMDA3MTA2NzkzMTEsMS40MDcxMDY3NyBMMS40MDcxMDY3NywtMC4wMDcxMDY3OTMxMSBMNC4wMDAwMDAwOSwyLjU4NTc4NjUzIEw2LjU5Mjg5MzQxLC0wLjAwNzEwNjc5MzExIEw4LjAwNzEwNjk3LDEuNDA3MTA2NzcgTDUuNDE0MjEzNjUsNC4wMDAwMDAwOSBaIiBmaWxsPSIjODNmN2Q2Ij48L3BhdGg+Cjwvc3ZnPgo=');
+        opacity: 1;
+      }
+      .tab_tab.tab_active .tab_icon {
+        top: -1px;
+        transform: scale(0.5);
+        opacity: 0.5;
       }
       .tab_tab:hover .tab_icon {
         transform: scale(1);
         transition-duration: .16s;
+        opacity: 0.5;
       }
       .tab_icon svg {
-        display: none;
-      }
-      .tab_icon::after {
         display: none;
       }
     `
