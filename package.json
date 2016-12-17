@@ -1,6 +1,6 @@
 {
   "name": "hyperterm-gooey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gooey Hyperterm Theme, based on Atom Gooey",
   "main": "index.js",
   "repository": "https://github.com/simeydotme/hyperterm-gooey.git",
